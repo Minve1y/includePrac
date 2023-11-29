@@ -34,8 +34,8 @@ def runGame():
             bricks.append(brick)      
 
     ball = pygame.Rect(screen_width // 2 - 16 // 2, screen_height // 2 - 16 // 2, 16, 16)
-    ball_dx = 5
-    ball_dy = -5
+    ball_dx = 10
+    ball_dy = -10
 
     paddle = pygame.Rect(screen_width // 2 - 80 // 2, screen_height - 16, 80, 16)
     paddle_dx = 0
@@ -49,9 +49,9 @@ def runGame():
                 break
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
-                    paddle_dx = -5
+                    paddle_dx = -10
                 elif event.key == pygame.K_RIGHT:
-                    paddle_dx = 5
+                    paddle_dx = 10
             elif event.type == pygame.KEYUP:
                 if event.key == pygame.K_LEFT:
                     paddle_dx = 0
