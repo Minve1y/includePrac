@@ -32,3 +32,6 @@ def runGame():
     
         screen.blit(airplane, (x, y))
         pygame.display.update()
+
+runGame()
+pygame.quit()
